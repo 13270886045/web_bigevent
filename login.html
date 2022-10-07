@@ -23,8 +23,8 @@
 
         <!-- 登录的div  -->
 
-        <div class="login-box" id="form_login">
-            <form class="layui-form" action="">
+        <div class="login-box">
+            <form class="layui-form" id="form_login">
                 <!-- 用户名 -->
                 <div class="layui-form-item">
                     <!-- 图标 -->
@@ -60,12 +60,12 @@
 
         <div class="reg-box">
 
-            <form class="layui-form" id="formReg">
+            <form class="layui-form" id="form_Reg">
                 <!-- 用户名 -->
                 <div class="layui-form-item">
                     <!-- 图标 -->
                     <i class="layui-icon layui-icon-username"></i>  
-                    <input type="text" name="username" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                    <input type="text" name="username" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">          
                 </div>
 
                 <!-- 密码 -->
@@ -88,29 +88,22 @@
                 <div class="layui-form-item link ">
 
             <a href="javascript:;" id="link_login">去登陆</a>
-              
-
-
                 </div>
                     
                 </form>
 
-
-
-
         </div>
     
    
-
-
-    <!-- 导入jquery -->
-    
-    <script src="/assets/lib/jquery.js"></script>
-     
-    <!-- 导入自己的jquery的脚本 -->
-    <script src="/assets/js/login.js"></script>
-    <script src="/assets/js/baseAPI.js"></script>
     <!-- 导入aiyui的js文件 -->
     <script src="/assets/lib/layui/layui.all.js"></script>
+    <!-- 导入jquery -->
+    <script src="/assets/lib/jquery.js"></script>
+    <!-- 导入baseapi，它是基于jquery.js,需要将它放到后面 -->
+    <script src="/assets/js/baseAPI2.js"></script>
+    <!-- 导入自己的jquery的脚本 -->
+    <script src="/assets/js/login.js"></script> 
+    
+
 </body>
 </html>
